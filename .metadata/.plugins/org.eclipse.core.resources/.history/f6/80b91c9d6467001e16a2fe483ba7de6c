@@ -1,0 +1,17 @@
+package com.anvsystems.javaOOPDemo;
+
+public class Bike {
+	
+	String make;
+	String model;
+	String engineCapacity;
+	String category;
+	int numberOfGears;
+	int mileage;
+	
+	//Function - Methods
+	// returnType nameOfFunction(arguments){
+	// ...
+	//}
+	//ObjectName.nameOfMethod("..");
+}

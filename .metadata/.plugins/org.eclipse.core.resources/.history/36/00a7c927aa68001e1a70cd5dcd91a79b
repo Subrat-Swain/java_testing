@@ -1,0 +1,23 @@
+package com.anvsystem.oopdemo2;
+
+public class AreaUtils {
+
+	String width;
+	String height;
+	
+	int calcArea(int width, int height) {
+		return width * height;
+	}
+	//	SQUARE
+	//	RECTANGLE
+	//	TRIANGLE
+	
+	int calcArea(int width, int height, boolean isTriangle) {
+		return (int) (0.5 * width * height);
+	}
+	public static void main(String[] args) {
+		AreaUtils twoDutils = new AreaUtils();
+		int area = twoDutils.calcArea(12, 12);
+		System.out.println(area);
+	}
+}

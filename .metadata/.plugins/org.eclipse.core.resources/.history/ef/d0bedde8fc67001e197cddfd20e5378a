@@ -1,0 +1,10 @@
+package com.anvsystemOOPDemo1;
+
+public class Vehicle {
+
+	String make;
+	String model;
+	String seatCapacity;
+	int numWheels;
+	String fuelType;
+}

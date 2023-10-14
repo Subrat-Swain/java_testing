@@ -1,0 +1,7 @@
+package com.anvsystem.compositiondemo;
+
+public class Battery {
+	
+	String chemicalType;
+	String capacityMah;
+}

@@ -1,0 +1,6 @@
+package com.anvsystem.compositiondemo;
+
+public class Iphone extends Phone{
+	
+	Camera sonyCarlZeiss;
+}

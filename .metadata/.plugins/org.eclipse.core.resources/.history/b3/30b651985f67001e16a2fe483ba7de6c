@@ -1,0 +1,37 @@
+package com.anvsystems.javaOOPDemo;
+
+public class Phone {
+	//Blueprint of an object :- Class
+	String company;
+	String model;
+	int screenSize;
+	String os;
+	String imei;
+	String porcessor;
+	String material;
+	String ram;
+	String Storage;
+	
+	void switchOnPhone() {
+		System.out.println(this.model+"Phone Switched ON!");
+	}
+	void switchOffPhone() {
+		System.out.println(this.model+"Phone Switched Off");
+	}
+	
+	public static void main(String[] args) {
+		//ClassName Varialbe = new ClassName();
+		Phone iphone = new Phone();
+		iphone.os = "ios 16.1";
+		iphone.screenSize = 6;
+		iphone.company = "apple";
+		
+		Phone galaxy = new Phone();
+		galaxy.ram = "8GB";
+		galaxy.screenSize = 7;
+		galaxy.material = "sapphire glass";
+		galaxy.switchOnPhone();
+		
+		
+	}
+}

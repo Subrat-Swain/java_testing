@@ -1,0 +1,5 @@
+package com.anvsystem.compositiondemo;
+
+public class Battery {
+
+}

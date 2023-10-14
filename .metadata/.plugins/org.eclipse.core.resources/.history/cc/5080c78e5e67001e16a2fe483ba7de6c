@@ -1,0 +1,14 @@
+package com.anvsystems.javaOOPDemo;
+
+public class Phone {
+	
+	String company;
+	String model;
+	int screenSize;
+	String os;
+	String imei;
+	String porcessor;
+	String material;
+	String ram;
+	String Storage;
+}

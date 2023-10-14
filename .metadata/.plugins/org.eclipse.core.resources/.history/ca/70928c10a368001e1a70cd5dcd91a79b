@@ -1,0 +1,7 @@
+package com.anvsystem.compositiondemo;
+
+public class Camera {
+	String resolution;
+	String sensorType;
+	String patent;
+}

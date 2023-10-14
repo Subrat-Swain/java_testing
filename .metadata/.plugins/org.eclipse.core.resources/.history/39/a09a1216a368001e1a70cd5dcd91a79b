@@ -1,0 +1,8 @@
+package com.anvsystem.compositiondemo;
+
+public class Display {
+	String type;
+	String size;
+	String colors;
+	String company;
+}

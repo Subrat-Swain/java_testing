@@ -1,0 +1,39 @@
+package com.anvsystems.javaOOPDemo;
+
+public class Bike {
+	
+	String make;
+	String model;
+	String engineCapacity;
+	String category;
+	int numberOfGears;
+	int mileage;
+	int maxGearNumber;
+	
+	//Function - Methods
+	// returnType nameOfFunction(arguments){
+	// ...
+	//}
+	//ObjectName.nameOfMethod("..");
+	
+	/**
+	 * Declare a class Bike
+	 * Assign Properties to it
+	 * declare methods startBike(), stopBike(), changeGear();
+	 * startBike(), stopBike() and changeGear() methods should
+	 * show current make, model and accordingly work.
+	 * maxGearNumber
+	 */
+	void startBike() {
+		System.out.println(this.model+" Bike is Started");
+	}
+	void stopBike() {
+		System.out.println(this.model+" Bike is Stoped");
+	}
+	void changeGear() {
+		if(this.maxGearNumber < 6) {
+			
+		}
+	}
+}
+

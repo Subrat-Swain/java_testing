@@ -1,0 +1,17 @@
+package com.anvsystems.oopdemo3;
+
+public class Production {
+	
+	Server s1;
+	
+	void provisionServer() {
+		System.out.println("Provisioning new Server...");
+		s1 = new Server("Amazon", "8GB", "Intel XEON 7798");
+		System.out.println("Server Provision with ram "+s1.ram);
+		
+	}
+	public static void main(String[] args) {
+		Production p = new Production();
+		p.provisionServer();
+	}
+}
