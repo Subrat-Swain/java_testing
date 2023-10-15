@@ -22,5 +22,5 @@ public interface Http {
 	
 	public void postPage(String data, String link);
 	
-	public void putPage(String data, String link);
+	public void putPage(String data, String link); 
 }
