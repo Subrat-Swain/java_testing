@@ -1,8 +1,0 @@
-package com.anvsystem.oopdemo2;
-
-public class DemoClass {
-	
-	public static void main(String[] args) {
-		Server s = new Server("jghog", "ghoah", "oghoa");
-	}
-}

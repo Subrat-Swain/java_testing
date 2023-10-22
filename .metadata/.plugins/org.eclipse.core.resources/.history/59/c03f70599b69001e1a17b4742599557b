@@ -1,9 +1,0 @@
-package com.anvsystems.oopdemo3;
-
-public class EdgeComputing extends Server{
-	String serverNearestLocation;
-	
-	public EdgeComputing() {
-		super("lshgo","osghgh","hogsh");
-	}
-}
