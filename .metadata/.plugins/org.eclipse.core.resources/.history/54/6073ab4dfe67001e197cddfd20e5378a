@@ -1,7 +1,0 @@
-package com.anvsystemOOPDemo1;
-
-public class Rose extends Plant{
-	// Rose IS-A PLANT
-	boolean hasFlowers;
-	String rootType;
-}

@@ -8,5 +8,7 @@ public class Windows {
 		
 		Http fox = new Firefox();
 		fox.getPage("https://www.gmail.com");
+		
+		Http safari = new Safari();
 	}
 }
