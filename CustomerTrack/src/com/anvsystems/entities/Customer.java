@@ -13,11 +13,11 @@ public class Customer implements Serializable{
 	private String email;
 	private String phone;
 	
-	// Compositon:- as customer has an address 1 to 1 relationship;
-	private Address address;
-	
-	// Composition:-1 to many relationship(Has-A relationship);
-	private List<Preference> preferences;
+//	// Compositon:- as customer has an address 1 to 1 relationship;
+//	private Address address;
+//	
+//	// Composition:-1 to many relationship(Has-A relationship);
+//	private List<Preference> preferences;
 	
 	//Getters & Setters:-
 	public String getCustomerId() {
@@ -68,20 +68,5 @@ public class Customer implements Serializable{
 		this.phone = phone;
 	}
 
-	public Address getAddress() {
-		return address;
-	}
-
-	public void setAddress(Address address) {
-		this.address = address;
-	}
-
-	public List<Preference> getPreferences() {
-		return preferences;
-	}
-
-	public void setPreferences(List<Preference> preferences) {
-		this.preferences = preferences;
-	}
 	
 }

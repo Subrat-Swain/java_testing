@@ -31,7 +31,7 @@ public interface IDataUtils {
 	 * @return customer
 	 */
 	
-	public Customer readCustomer(Customer id);
+	public Customer readCustomer(String id);
 	/**
 	 * <p>Read a new Customer Entity</p>
 	 * @param c
@@ -57,4 +57,6 @@ public interface IDataUtils {
 	 * @param c
 	 * @return customer
 	 */
+	public Customer displayCustomerData(Customer c, String details);
+//	Customer readCustomer(String id);
 }

@@ -1,7 +1,7 @@
 package com.anvsystems.entities;
 
 import java.io.Serializable;
-
+// Not Implemented for serialization
 public class Preference implements Serializable{
 
 	private String customerPreference;
