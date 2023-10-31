@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-31T13:09:33 IST" name="Default suite" finished-at="2023-10-31T13:09:43 IST" duration-ms="10719">
+    <groups>
+    </groups>
+    <test started-at="2023-10-31T13:09:33 IST" name="Default test" finished-at="2023-10-31T13:09:43 IST" duration-ms="10719">
+      <class name="com.anvsystems.waits.Assignment">
+        <test-method signature="changeText()[pri:0, instance:com.anvsystems.waits.Assignment@478190fc]" started-at="2023-10-31T13:09:33 IST" name="changeText" finished-at="2023-10-31T13:09:43 IST" duration-ms="10584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeText -->
+      </class> <!-- com.anvsystems.waits.Assignment -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
