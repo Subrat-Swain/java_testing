@@ -25,5 +25,11 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFSheet"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="java.lang.AssertionError"/>
+    <fullyQualifiedTypeName name="dev.failsafe.internal.util.Assert"/>
+    <fullyQualifiedTypeName name="org.testng.Assert"/>
 </qualifiedTypeNameHistroy>

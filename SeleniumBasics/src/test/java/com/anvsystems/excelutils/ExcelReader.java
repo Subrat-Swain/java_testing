@@ -15,7 +15,7 @@ public class ExcelReader {
 		try {
 			FileInputStream fis = new FileInputStream(new File("./data/testdata.xlsx"));
 			XSSFWorkbook wb = new XSSFWorkbook(fis);
-			XSSFSheet sheet = wb.getSheet("Sheet1");
+			XSSFSheet sheet = wb.getSheet("Persons");
 			int lastRowNumber = sheet.getLastRowNum();
 //			System.out.println(lastRowNumber);
 			for(int i = 0; i<=lastRowNumber; i++) {

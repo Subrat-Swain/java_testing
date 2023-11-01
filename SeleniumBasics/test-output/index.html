@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\SITU\AppData\Local\Temp\testng-eclipse--2144792941\testng-customsuite.xml</span>
+                    <span>C:\Users\SITU\AppData\Local\Temp\testng-eclipse--622794609\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.anvsystems.datadriven.LoginTest" class="method navigator-link" hash-for-method="loginWithCredentials(mngr535012, qasYnysp)">loginWithCredentials(mngr535012, qasYnysp)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.anvsystems.datadriven.LoginTest" class="method navigator-link" hash-for-method="loginWithCredentials(mngr5350124, qasYnysp)">loginWithCredentials(mngr5350124, qasYnysp)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +122,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.anvsystems.waits.Assignment" class="method navigator-link" hash-for-method="changeText">changeText</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.anvsystems.datadriven.LoginTest" class="method navigator-link" hash-for-method="loginWithCredentials(mngr535012, qasYnys)">loginWithCredentials(mngr535012, qasYnys)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.anvsystems.datadriven.LoginTest" class="method navigator-link" hash-for-method="loginWithCredentials(mngr5350124, qasYnys)">loginWithCredentials(mngr5350124, qasYnys)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -118,17 +142,146 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.anvsystems.waits.Assignment</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.anvsystems.datadriven.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="changeText">
-                  </a> <!-- changeText -->
-                  <span class="method-name">changeText</span>
+                  <a name="loginWithCredentials(mngr535012, qasYnysp)">
+                  </a> <!-- loginWithCredentials(mngr535012, qasYnysp) -->
+                  <span class="method-name">loginWithCredentials</span>
+                  <span class="parameters">(mngr535012,qasYnysp)</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
+  (Session info: chrome=118.0.5993.118): User or Password is not valid
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7164296c9b00075ba3664371687172a, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\SITU\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58251}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58251/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d7164296c9b00075ba3664371687172a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:309)
+	at com.anvsystems.datadriven.LoginTest.loginWithCredentials(LoginTest.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithCredentials(mngr5350124, qasYnysp)">
+                  </a> <!-- loginWithCredentials(mngr5350124, qasYnysp) -->
+                  <span class="method-name">loginWithCredentials</span>
+                  <span class="parameters">(mngr5350124,qasYnysp)</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
+  (Session info: chrome=118.0.5993.118): User or Password is not valid
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [af7a79cf2dabec29bf5a000fb190736e, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\SITU\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58309}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58309/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: af7a79cf2dabec29bf5a000fb190736e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:309)
+	at com.anvsystems.datadriven.LoginTest.loginWithCredentials(LoginTest.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.anvsystems.datadriven.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithCredentials(mngr535012, qasYnys)">
+                  </a> <!-- loginWithCredentials(mngr535012, qasYnys) -->
+                  <span class="method-name">loginWithCredentials</span>
+                  <span class="parameters">(mngr535012,qasYnys)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithCredentials(mngr5350124, qasYnys)">
+                  </a> <!-- loginWithCredentials(mngr5350124, qasYnys) -->
+                  <span class="method-name">loginWithCredentials</span>
+                  <span class="parameters">(mngr5350124,qasYnys)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +289,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\SITU\AppData\Local\Temp\testng-eclipse--2144792941\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\SITU\AppData\Local\Temp\testng-eclipse--622794609\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +298,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.anvsystems.waits.Assignment&quot;/&gt;
+      &lt;class name=&quot;com.anvsystems.datadriven.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -185,16 +338,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'changeText')
-data.setCell(0, 2, 'com.anvsystems.waits.Assignment')
-data.setCell(0, 3, 10584);
+data.setCell(0, 1, 'loginWithCredentials')
+data.setCell(0, 2, 'com.anvsystems.datadriven.LoginTest')
+data.setCell(0, 3, 13586);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginWithCredentials')
+data.setCell(1, 2, 'com.anvsystems.datadriven.LoginTest')
+data.setCell(1, 3, 12104);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginWithCredentials')
+data.setCell(2, 2, 'com.anvsystems.datadriven.LoginTest')
+data.setCell(2, 3, 8368);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginWithCredentials')
+data.setCell(3, 2, 'com.anvsystems.datadriven.LoginTest')
+data.setCell(3, 3, 8172);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -220,10 +385,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.anvsystems.waits.Assignment</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.anvsystems.datadriven.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">changeText</span>
+                <span class="method-name">loginWithCredentials(mngr5350124, qasYnys)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginWithCredentials(mngr535012, qasYnysp)</span>
+                <span class="method-start">13592 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginWithCredentials(mngr5350124, qasYnysp)</span>
+                <span class="method-start">21963 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithCredentials(mngr535012, qasYnys)</span>
+                <span class="method-start">30137 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

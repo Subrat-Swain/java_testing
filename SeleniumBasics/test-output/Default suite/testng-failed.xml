@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.anvsystems.waits.ExplicitWaitDemo">
+      <class name="com.anvsystems.datadriven.LoginTest">
         <methods>
-          <include name="explictWaitTest"/>
+          <include name="loginWithCredentials" invocation-numbers="1 2"/>
         </methods>
-      </class> <!-- com.anvsystems.waits.ExplicitWaitDemo -->
+      </class> <!-- com.anvsystems.datadriven.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
